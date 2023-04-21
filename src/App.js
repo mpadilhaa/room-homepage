@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+
+import { useState } from 'react';
 import './App.css';
+import { dinamicProducts } from './data';
+
 
 function App() {
+  const [dinamicIndex, setDinamicIndex] = useState(0);
+
+  
+
+  const nextProduct = () => {
+    if(dinamicIndex === dinamicProducts.length - 1)return;
+    
+    setDinamicIndex(dinamicIndex + 1)
+  }
+
+  const previousProduct= () => {
+    if(dinamicIndex === 0)return;
+
+    setDinamicIndex(dinamicIndex - 1);
+  }
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <h1>{dinamicProducts[dinamicIndex].title}</h1>
+    <p><img src={dinamicProducts[dinamicIndex].img} alt="imagem promocional" /></p>
+    <button onClick={() => previousProduct()} > Previous</button>
+    <button onClick={() => nextProduct()} > next</button>
+    {dinamicIndex}
     </div>
   );
 }
