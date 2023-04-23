@@ -1,37 +1,17 @@
-
-import { useEffect, useState } from 'react';
 import {IoMdClose, IoMdMenu} from "react-icons/io";
+//hooks
+import useActiveMobile from '../hooks/useActiveMobile';
+import useWidthSize from '../hooks/useWidthSize';
 //css
 import "./Navbar.css"
 
+
 const Navbar = () => {
-    const [active, setActive] = useState(false);
-    const [width, setWidth] = useState(window.innerWidth);
 
+  const {active , toglleMenu} = useActiveMobile();
+  const {width} = useWidthSize();
 
-    useEffect(() => {
-
-        function handleResize() {
-            setWidth(window.innerWidth);
-          }
-      
-          window.addEventListener('resize', handleResize);
-      
-          return () => {
-            window.removeEventListener('resize', handleResize);
-          };
-        
-      }, [width]);
-
-   
-    
-    
-   const toglleMenu = () => {
-    setActive(!active)
-   } 
-   
-
-    return (
+  return (
     <div className='navbar' >
       {width < 500 ? 
       (<div className='navigate'>

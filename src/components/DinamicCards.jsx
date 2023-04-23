@@ -1,38 +1,19 @@
 import React from 'react';
-import { useState } from 'react';
 import {IoIosArrowBack, IoIosArrowForward} from "react-icons/io"
 import arrow from "../assets/icon-arrow.svg"
 
-
+import useDinamicCard from '../hooks/useDinamicCard';
 
 //data
-import { dinamicProducts } from '../data';
+
 
 //css
 import "./DinamicCards.css"
 
 
 const DinamicCards = () => {
-  
-  const [dinamicIndex, setDinamicIndex] = useState(0);
 
-  const nextProduct = () => {
-    if(dinamicIndex === dinamicProducts.length - 1) return;
-    
-    setDinamicIndex(dinamicIndex + 1)
-  }
-
-  const previousProduct= () => {
-    if(dinamicIndex === 0) return;
-
-    setDinamicIndex(dinamicIndex - 1);
-  }
-
-  
-  
-
-  
-  
+  const {dinamicIndex,dinamicProducts, previousProduct, nextProduct} = useDinamicCard();
   
   return (
     <div className='container'>
