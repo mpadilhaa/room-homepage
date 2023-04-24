@@ -18,7 +18,7 @@ const Navbar = () => {
       
      
       {width < 420 ? 
-      (<div className={active ? 'navigate' : 'bg-none'}>
+      (<div className={active ? 'navigate ' : 'bg-none'}>
         <div className="menu" onClick={toglleMenu}>
           {active ? 
           <IoMdClose size={25} style={{ color: 'var(--text)' }}/> 

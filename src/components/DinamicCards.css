@@ -1,4 +1,7 @@
-.img-carrousel{
+.container{
+    height: 100%;
+}
+.col-1 {
     position: relative;
 }
 
@@ -9,9 +12,7 @@
 .btn{
     position: absolute;
     bottom: 4px;
-    right:0 ;
-    
-    
+    right: 0;
 }
 
 .btn button {
@@ -19,38 +20,44 @@
     color: var(--bg);
     background-color: var(--title);
     border: none;
-    
 }
 
 .btn button svg {
     font-size: 25px;
 }
+
 .content{
     display: flex;  
     flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    margin: 0 auto;
     gap: 20px;
-    padding:40px;
-}    
+}  
+
 .content p{
-    padding-right: 40px;
-   line-height: 1.4; 
-   color: var(--text);
-   font-weight: 600;
+    line-height: 1.4; 
+    color: var(--text);
+    font-weight: 600;
 } 
 
+.content h3{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
 .shop-arrow{
     margin-top: 10px;
-    display: flex;
-    gap: 20px;
-    align-items: center;
 }
 
 .shop{
+    display:flex;
+    flex-wrap: wrap;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--title);
     letter-spacing: 9px;
     font-weight: 700;
+    gap: 20px;
 }
 
 .shop:hover {
@@ -58,3 +65,16 @@
     transition: .4s ease;
 }
 
+.nav-opacity{
+    background: blue;
+}
+
+.col-3, .col-4, .col-5 {
+    width: 100vw;
+
+}
+
+.col-3 img, .col-5 img{
+    width: 100%;
+   
+}
