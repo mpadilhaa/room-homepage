@@ -4,6 +4,8 @@ import useActiveMobile from '../hooks/useActiveMobile';
 import useWidthSize from '../hooks/useWidthSize';
 //css
 import "./Navbar.css"
+//img
+
 
 
 const Navbar = () => {
@@ -13,19 +15,33 @@ const Navbar = () => {
 
   return (
     <div className='navbar' >
-      {width < 500 ? 
-      (<div className='navigate'>
-        <div onClick={toglleMenu}>{active ? <IoMdClose/> : <IoMdMenu/>}</div>
-        {active ? 
-        <div className='navigate-mobile'>
+      
+     
+      {width < 420 ? 
+      (<div className={active ? 'navigate' : 'bg-none'}>
+        <div className="menu" onClick={toglleMenu}>
+          {active ? 
+          <IoMdClose size={25} style={{ color: 'var(--text)' }}/> 
+          :<IoMdMenu size={25} style={{ color: 'var(--bg)' }}/>
+        }
+        </div>
+        
+        {active ? <div>
+          
+        <div className='navigate-mobile' >
           <ul>
             <li>home</li>
             <li>shop</li>
             <li>about</li>
             <li>conta</li>
           </ul>
-        </div> : 
-       ''}
+        </div>  
+        
+        </div>
+           :
+       <h3 className="logo">room</h3>
+       
+      }
       </div>
       ) : 
       (<div className='navigate-desktop'>

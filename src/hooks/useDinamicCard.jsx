@@ -1,6 +1,7 @@
 import { dinamicProducts } from "../data";
 import { useState } from "react";
 
+
 const useDinamicCard = () => {
     const [dinamicIndex, setDinamicIndex] = useState(0);
 
