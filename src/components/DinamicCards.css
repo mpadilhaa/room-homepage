@@ -33,6 +33,10 @@
   cursor: pointer;
 }
 
+.btn button:hover {
+  background-color: var(--hover-primary);
+}
+
 .btn button svg {
   font-size: 25px;
 }
@@ -86,6 +90,26 @@
   width: 100%;
 }
 
+@media (min-width: 600px) and (max-width: 999px) {
+  .col-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px;
+  }
+  .col-4 {
+    height: 250px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    padding: 120px;
+  }
+}
 /* desktop */
 
 @media (min-width: 1000px) {

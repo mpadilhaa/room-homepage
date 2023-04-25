@@ -33,17 +33,16 @@
 .navigate-mobile li {
   border-bottom: 2px solid transparent;
   font-weight: 700;
-  cursor: pointer;
+}
+
+.navigate-mobile a {
+  text-decoration: none;
+  color: var(--title);
 }
 
 .navigate-mobile li:hover {
   border-bottom: 2px solid var(--title);
   font-weight: 700;
-}
-.navigate-mobile li:hover {
-  padding-bottom: 3px;
-  color: var(--text);
-  border-bottom: 2px solid var(--text);
 }
 
 .navigate-desktop {
