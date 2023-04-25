@@ -1,14 +1,10 @@
-:root{
-  --text:hsl(0, 0%, 63%);
-  --title:hsl(0, 0%, 0%);
-  --bg:hsl(0, 0%, 100%);
-  --hover-primary:hsl(0, 0%, 27%);
+:root {
+  --text: hsl(0, 0%, 63%);
+  --title: hsl(0, 0%, 0%);
+  --bg: hsl(0, 0%, 100%);
+  --hover-primary: hsl(0, 0%, 27%);
 }
 
-.App{
+.App {
   background-color: var(--bg);
- 
-  
- 
 }
-

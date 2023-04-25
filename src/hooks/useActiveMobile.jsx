@@ -1,16 +1,16 @@
-import {useState} from 'react'
+import { useState } from "react";
 
 const useActiveMobile = () => {
-    const [active, setActive] = useState(false)
+  const [active, setActive] = useState(false);
 
-    const toglleMenu = () => {
-        setActive(!active)
-       } 
+  const toglleMenu = () => {
+    setActive(!active);
+  };
 
   return {
     active,
     toglleMenu,
-  }
-}
+  };
+};
 
-export default useActiveMobile
+export default useActiveMobile;

@@ -1,14 +1,10 @@
-import './App.css';
-import DinamicCards from './components/DinamicCards';
-
-
-
+import "./App.css";
+import DinamicCards from "./components/DinamicCards";
 
 function App() {
-
   return (
     <div className="App">
-      <DinamicCards/>
+      <DinamicCards />
     </div>
   );
 }
