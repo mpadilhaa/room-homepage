@@ -33,8 +33,13 @@
 .navigate-mobile li {
   border-bottom: 2px solid transparent;
   font-weight: 700;
+  cursor: pointer;
 }
 
+.navigate-mobile li:hover {
+  border-bottom: 2px solid var(--title);
+  font-weight: 700;
+}
 .navigate-mobile li:hover {
   padding-bottom: 3px;
   color: var(--text);
@@ -53,6 +58,7 @@
   color: var(--bg);
   font-weight: 500;
 }
+
 .navigate-desktop ul {
   display: flex;
   justify-content: space-around;
@@ -61,7 +67,14 @@
 }
 
 .navigate-desktop li {
+  border-bottom: 2px solid transparent;
+  padding: 4px;
   color: var(--bg);
+  cursor: pointer;
+}
+.navigate-desktop li:hover {
+  border-bottom: 2px solid var(--bg);
+  font-weight: 700;
 }
 
 @media (min-width: 600px) and (max-width: 999px) {

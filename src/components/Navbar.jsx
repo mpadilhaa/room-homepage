@@ -26,10 +26,10 @@ const Navbar = () => {
             <div>
               <div className="navigate-mobile">
                 <ul>
-                  <li>home</li>
-                  <li>shop</li>
-                  <li>about</li>
-                  <li>contact</li>
+                  <li><a href="#home">home</a></li>
+                  <li><a href="#shop">shop</a></li>
+                  <li><a href="#about">about</a></li>
+                  <li><a href="#contact">contact</a></li>
                 </ul>
               </div>
             </div>
