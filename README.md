@@ -36,7 +36,7 @@
 ## Demonstração
 
 
-[Acesse o app](https://interactive-ratingg-component.netlify.app/)
+[Acesse o app](https://roomhomepagemp.netlify.app/)
 
 <br/>
 
